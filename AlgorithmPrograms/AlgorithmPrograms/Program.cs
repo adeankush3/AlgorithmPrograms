@@ -17,6 +17,9 @@ namespace AlgorithmPrograms
             string userInput = Console.ReadLine();
             Console.WriteLine("User input is :" + userInput);
             binarySearch.BinarySearchIterative(userInput);
+
+
+            binarySearch.Angram();
         }
     }
 }
