@@ -104,5 +104,38 @@ namespace AlgorithmPrograms
             }
             Console.ReadKey();
         }
+
+        public void Bubble()
+        {
+
+            int[] Array = { 87, 95, 85, 18, 33, 32, 52, 78, 91, };
+            int temp;
+
+            Console.WriteLine("Array Before Sorting: ");
+            for (int i = 0; i < Array.Length; i++)
+            {
+                Console.Write(Array[i] + " ");
+            }
+
+            for (int j = 0; j <= Array.Length - 2; j++)
+            {
+                for (int i = 0; i <= Array.Length - 2; i++)
+                {
+                    if (Array[i] > Array[i + 1])
+                    {
+                        temp = Array[i + 1];
+                        Array[i + 1] = Array[i];
+                        Array[i] = temp;
+                    }
+                }
+            }
+            Console.WriteLine("\nSorted Array is:");
+
+            foreach (int data in Array)
+            {
+                Console.Write(data + " ");
+            }
+
+        }
     }
 }
