@@ -11,6 +11,12 @@ namespace AlgorithmPrograms
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome To Algorithm Program");
+
+            BinarySearch binarySearch = new BinarySearch();
+            Console.WriteLine("Enter string value to search:");
+            string userInput = Console.ReadLine();
+            Console.WriteLine("User input is :" + userInput);
+            binarySearch.BinarySearchIterative(userInput);
         }
     }
 }
