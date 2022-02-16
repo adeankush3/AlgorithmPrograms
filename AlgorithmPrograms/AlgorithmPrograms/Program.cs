@@ -17,8 +17,9 @@ namespace AlgorithmPrograms
             "\n 2. Angram" +
             "\n 3. PrimeNumber" +
             "\n 4. Bubble Sort" +
-            "\n 5. Insertion Sort"+
-            "\n 6. Exit");
+            "\n 5. Insertion Sort" +
+            "\n 6. Merge Sort" +
+            "\n 7. Exit");
 
             int option = Convert.ToInt32(Console.ReadLine());
 
@@ -47,6 +48,12 @@ namespace AlgorithmPrograms
                 case 5:
                     BinarySearch binSearch4 = new BinarySearch();
                     binSearch4.InsertionSort();
+                    break;
+                case 6:
+                    BinarySearch binarySearch2 = new BinarySearch();
+                    int[] arr2 = { 44, 21, 19, 65, 74, 50 };
+                    binarySearch2.Sort(arr2, 0, arr2.Length - 1);
+                    binarySearch.PrintArray(arr2);
                     break;
                 default:
                     Console.WriteLine("Choose correct option");
