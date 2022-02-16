@@ -137,5 +137,33 @@ namespace AlgorithmPrograms
             }
 
         }
+        public void InsertionSort()
+        {
+            string[] stringArray = { "Sunday", "Monday", "Friday", "Thursday", "Wednesday","Tuesday","Saturday" };
+
+            System.Console.WriteLine("Before Sort Array :");
+            foreach (var item in stringArray)
+            {
+                Console.WriteLine(item);
+            }
+
+            for (int i = 1; i < stringArray.Length; i++)
+            {
+                string value = stringArray[i];
+                int j = i - 1;
+                while ((j >= 0) && (stringArray[j].CompareTo(value) > 0))
+                {
+                    stringArray[j + 1] = stringArray[j];
+                    j--;
+                }
+                stringArray[j + 1] = value;
+            }
+
+            System.Console.WriteLine("Afer Sort Array is:");
+            foreach (var item in stringArray)
+            {
+                Console.WriteLine(item);
+            }
+        }
     }
 }

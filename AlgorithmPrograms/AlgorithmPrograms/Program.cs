@@ -11,16 +11,14 @@ namespace AlgorithmPrograms
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome To Algorithm Program");
-            BinarySearch b = new BinarySearch();
-            b.Bubble();
-
-            
+       
             Console.WriteLine("Welcome to Algorithm Programs :  \n Choose operation :" +
             "\n 1. Binary search" +
             "\n 2. Angram" +
             "\n 3. PrimeNumber" +
             "\n 4. Bubble Sort" +
-            "\n 3. Exit");
+            "\n 5. Insertion Sort"+
+            "\n 6. Exit");
 
             int option = Convert.ToInt32(Console.ReadLine());
 
@@ -42,9 +40,14 @@ namespace AlgorithmPrograms
                     BinarySearch binSearch2 = new BinarySearch();
                     binSearch2.PrimeNumber();
                     break;
-               // case 4:
-                //    BinarySearch binSearch3 = new BinarySearch();
-                 //   binSearch3.Bubble();
+                case 4:
+                    BinarySearch binSearch3 = new BinarySearch();
+                    binSearch3.Bubble();
+                    break;
+                case 5:
+                    BinarySearch binSearch4 = new BinarySearch();
+                    binSearch4.InsertionSort();
+                    break;
                 default:
                     Console.WriteLine("Choose correct option");
                     break;
